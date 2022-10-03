@@ -1,3 +1,5 @@
+package com.task02;
+
 public class Search {
 
     public static void main(String[] args) {
