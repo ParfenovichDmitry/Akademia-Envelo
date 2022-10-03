@@ -19,9 +19,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         URL url = new URL(KANYE_API_URL);
 
-        Set<String> quotes = new HashSet<>();  // Tabela unikalnych cytatów
+        Set<String> quotes = new HashSet<>();  // Tabela unikatowych cytatów
 
-        /* Сykl cytowań */
+        /* Сykl cytowania */
         while (true) {
             String quote = UrlUtil.readQuote(url); // Uzyskanie nowego cytatu
 

@@ -10,15 +10,15 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 public class UrlUtil {
-     /*Metoda pobierania danych z określonego łinka*/
+     /*Metoda pobierania danych z określonego linku*/
 
     public static String readQuote(URL url) throws ParseException {
         String resultJson = UrlUtil.readFrom(url);                                      //Odczytywanie wyniku JSON
         JSONObject resultPerl = (JSONObject) JSONValue.parseWithException(resultJson);  //Parsowanie wyniku w JSON
-        return (String) resultPerl.get("quote");                                        //Zwracanie wartości ciągu w cytat
+        return (String) resultPerl.get("quote");                                        //Zwrócenie wartości linijki cytatu
     }
 
-    /*Metoda odczytu i konwersji danych z URL na JSON jako ciąg*/
+    /*Metoda odczytu i konwersji danych z URL w JSON jako linijkę*/
     public static String readFrom(URL url) {
         if (url == null) {
             return "";
